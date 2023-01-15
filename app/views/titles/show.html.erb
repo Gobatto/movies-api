@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @title.genre %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @title.year %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @title.country %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @title.published_at %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @title.description %>
+</p>
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>
