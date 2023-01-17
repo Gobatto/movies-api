@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: _api_movies_development
+  database: _beckend_challenge_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: _api_movies_test
+  database: _beckend_challenge_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: _api_movies_production
-  username: _api_movies
-  password: <%= ENV['_API_MOVIES_DATABASE_PASSWORD'] %>
+  database: _beckend_challenge_production
+  username: _beckend_challenge
+  password: <%= ENV['_BECKEND_CHALLENGE_DATABASE_PASSWORD'] %>
